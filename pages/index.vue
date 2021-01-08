@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">kenepa-nuxt</h1>
+      <!-- <h1 class="title">kenepa-nuxt</h1> -->
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -30,6 +30,10 @@ export default {}
 </script>
 
 <style>
+body {
+  color: #141e24;
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
