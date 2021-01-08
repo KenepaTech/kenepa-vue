@@ -31,7 +31,7 @@ export default {}
 
 <style>
 body {
-  color: #141e24;
+  background: #141e24;
 }
 
 .container {
