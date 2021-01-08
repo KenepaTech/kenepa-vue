@@ -1,37 +1,27 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <!-- <Logo /> -->
       <!-- <h1 class="title">kenepa-nuxt</h1> -->
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <SectionHeader />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import SectionHeader from '../components/SectionHeader'
+
+export default {
+  components: {
+    SectionHeader,
+  },
+}
 </script>
 
 <style>
 body {
   background: #141e24;
+  color: white;
 }
 
 .container {
