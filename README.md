@@ -1,5 +1,7 @@
 # kenepa-nuxt
 
+![example branch parameter](https://github.com/KenepaTech/kenepa-nuxt/workflows/testing/badge.svg?branch=dev)
+
 ## Build Setup
 
 ```bash
