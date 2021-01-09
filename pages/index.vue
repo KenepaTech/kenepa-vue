@@ -1,19 +1,19 @@
 <template>
   <div class="container">
     <div>
-      <!-- <Logo /> -->
-      <!-- <h1 class="title">kenepa-nuxt</h1> -->
-      <SectionHeader />
+      <Logo />
+      <h1 class="title">Kenepa Tech</h1>
+      <WelcomeBanner />
     </div>
   </div>
 </template>
 
 <script>
-import SectionHeader from '../components/SectionHeader'
+import WelcomeBanner from '../components/WelcomeBanner'
 
 export default {
   components: {
-    SectionHeader,
+    WelcomeBanner,
   },
 }
 </script>
