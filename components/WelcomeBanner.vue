@@ -21,6 +21,12 @@
   display: inline-block;
 }
 
+@media (max-width: 576px) {
+  .typewriter h1 {
+    font-size: 1rem;
+  }
+}
+
 /* The typing effect */
 @keyframes typing {
   from {
