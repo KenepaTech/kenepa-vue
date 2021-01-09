@@ -38,9 +38,19 @@ body {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: 1px;
 }
+
+/* h1 {
+  EXAMPLE OF GRADIENT TEXT
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
 
 @media (max-width: 576px) {
   .title {

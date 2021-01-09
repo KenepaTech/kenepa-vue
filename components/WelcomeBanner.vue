@@ -1,6 +1,9 @@
 <template>
-  <div>
-    <vue-typed-js :strings="['A Technology Company']" :showCursor="false">
+  <div class="container">
+    <vue-typed-js
+      :strings="['We are Kenepa Tech', 'A Technology Company']"
+      :showCursor="false"
+    >
       <h1 class="typing"></h1>
     </vue-typed-js>
   </div>
@@ -18,14 +21,9 @@ export default {
 </script>
 
 <style>
-.lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-
 @media (max-width: 576px) {
   .typing {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 </style>
