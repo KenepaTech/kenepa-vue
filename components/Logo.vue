@@ -123,7 +123,7 @@
 
 <style>
 .KenepaLogo {
-  animation: 1s appear;
+  animation: 5s appear;
   margin: auto;
 }
 

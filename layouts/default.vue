@@ -1,8 +1,19 @@
 <template>
   <div>
+    <AppHeader />
     <Nuxt />
   </div>
 </template>
+
+<script>
+import AppHeader from '../components/AppHeader'
+
+export default {
+  components: {
+    AppHeader,
+  },
+}
+</script>
 
 <style>
 html {
@@ -22,6 +33,7 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 .button--green {
