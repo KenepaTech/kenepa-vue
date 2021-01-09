@@ -1,6 +1,6 @@
 <template>
   <div class="typewriter">
-    <h1 class="box">A Technology Company.</h1>
+    <h1>A Technology Company.</h1>
   </div>
 </template>
 
@@ -15,9 +15,6 @@
   letter-spacing: 0.1em; /* Adjust as needed */
   animation: typing 3s steps(50, end), blink-caret 1s step-end infinite;
   margin-bottom: 10%;
-}
-
-.box {
   display: inline-block;
 }
 
