@@ -1,6 +1,6 @@
 # kenepa-nuxt
 
-![example branch parameter](https://github.com/KenepaTech/kenepa-nuxt/workflows/testing/badge.svg?branch=dev)
+![KenepaTech](https://github.com/KenepaTech/kenepa-nuxt/workflows/.github/workflows/ci.yml/badge.svg)
 
 ## Build Setup
 
