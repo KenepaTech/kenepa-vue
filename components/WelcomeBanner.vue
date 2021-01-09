@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" style="padding-bottom: 5rem">
     <vue-typed-js
       :strings="['We are Kenepa Tech', 'A Technology Company']"
       :showCursor="false"
