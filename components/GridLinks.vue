@@ -2,16 +2,37 @@
   <b-container class="bv-example-row">
     <b-row no-gutters>
       <b-col class="img-wrapper" sm="6">
-        <img src="~/assets/projects.jpg" class="grid-image" />
-        <div class="overlay">
-          <div class="grid-text">PROJECTS</div>
-        </div>
+        <picture>
+          <source
+            :srcSet="require('~/assets/projects.jpg?webp')"
+            type="image/webp"
+          />
+          <source
+            :srcSet="require('~/assets/projects.jpg')"
+            type="image/jpeg"
+          />
+          <img class="grid-image" :src="require('~/assets/projects.jpg')" />
+        </picture>
+        <nuxt-link to="/projects">
+          <div class="overlay">
+            <div class="grid-text">PROJECTS</div>
+          </div>
+        </nuxt-link>
       </b-col>
-      <b-col class="img-wrapper" sm="6">
-        <img src="~/assets/about.jpg" class="grid-image" />
-        <div class="overlay">
-          <div class="grid-text">ABOUT US</div>
-        </div>
+      <b-col class="img-wrapper" sm="6"
+        ><picture>
+          <source
+            :srcSet="require('~/assets/about.jpg?webp')"
+            type="image/webp"
+          />
+          <source :srcSet="require('~/assets/about.jpg')" type="image/jpeg" />
+          <img class="grid-image" :src="require('~/assets/about.jpg')" />
+        </picture>
+        <nuxt-link to="/about">
+          <div class="overlay">
+            <div class="grid-text">ABOUT US</div>
+          </div>
+        </nuxt-link>
       </b-col>
       <b-col sm>col-sm</b-col>
       <b-col sm>col-sm</b-col>
@@ -23,6 +44,8 @@
 <style>
 .grid-image {
   max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .overlay {
