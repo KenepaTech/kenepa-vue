@@ -1,7 +1,7 @@
 # kenepa-nuxt
 
-![main](https://github.com/KenepaTech/kenepa-nuxt/workflows/ci/badge.svg?branch=main)
-![dev](https://github.com/KenepaTech/kenepa-nuxt/workflows/ci/badge.svg?branch=dev)
+main: ![main](https://github.com/KenepaTech/kenepa-nuxt/workflows/ci/badge.svg?branch=main)
+dev: ![dev](https://github.com/KenepaTech/kenepa-nuxt/workflows/ci/badge.svg?branch=dev)
 
 ## Build Setup
 
