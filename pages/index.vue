@@ -36,6 +36,7 @@ body {
 }
 
 .title {
+  margin-top: 1rem;
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
