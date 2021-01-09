@@ -1,6 +1,6 @@
 # kenepa-nuxt
 
-![KenepaTech](https://github.com/KenepaTech/kenepa-nuxt/workflows/.github/workflows/ci.yml/badge.svg)
+![ci](https://github.com/KenepaTech/kenepa-nuxt/workflows/ci/badge.svg)
 
 ## Build Setup
 
