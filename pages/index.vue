@@ -26,7 +26,6 @@ body {
 
 .container {
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +40,12 @@ body {
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 2rem;
+  }
 }
 
 .subtitle {

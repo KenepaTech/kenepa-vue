@@ -36,15 +36,11 @@ export default {
 </script>
 
 <style>
-/* .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-} */
+.header {
+  margin-bottom: 10%;
+}
+
 .header .KenepaBrand {
-  /* margin: auto; */
   color: lightgreen;
   text-shadow: 0 0 20px lightgreen;
 }
