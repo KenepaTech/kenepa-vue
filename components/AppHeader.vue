@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <b-navbar toggleable type="dark">
-      <nuxt-link class="KenepaLogo" to="/">KENEPA TECH</nuxt-link>
+      <nuxt-link class="KenepaBrand" to="/">KENEPA TECH</nuxt-link>
       <b-navbar-toggle target="navbar-toggle-collapse">
         <template #default="{ expanded }">
           <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
@@ -36,15 +36,11 @@ export default {
 </script>
 
 <style>
-/* .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-} */
-.header .KenepaLogo {
-  /* margin: auto; */
+.header {
+  margin-bottom: 10%;
+}
+
+.header .KenepaBrand {
   color: lightgreen;
   text-shadow: 0 0 20px lightgreen;
 }

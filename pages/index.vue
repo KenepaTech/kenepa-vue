@@ -1,19 +1,19 @@
 <template>
   <div class="container">
     <div>
-      <!-- <Logo /> -->
-      <!-- <h1 class="title">kenepa-nuxt</h1> -->
-      <SectionHeader />
+      <Logo />
+      <h1 class="title">Kenepa Tech</h1>
+      <WelcomeBanner />
     </div>
   </div>
 </template>
 
 <script>
-import SectionHeader from '../components/SectionHeader'
+import WelcomeBanner from '../components/WelcomeBanner'
 
 export default {
   components: {
-    SectionHeader,
+    WelcomeBanner,
   },
 }
 </script>
@@ -26,7 +26,6 @@ body {
 
 .container {
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,8 +38,24 @@ body {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: 1px;
+}
+
+/* h1 {
+  EXAMPLE OF GRADIENT TEXT
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 2rem;
+  }
 }
 
 .subtitle {
