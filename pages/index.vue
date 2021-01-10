@@ -4,16 +4,19 @@
       <Logo />
       <h1 class="title">Kenepa Tech</h1>
       <WelcomeBanner />
+      <GridLinks />
     </div>
   </div>
 </template>
 
 <script>
 import WelcomeBanner from '../components/WelcomeBanner'
+import GridLinks from '../components/GridLinks'
 
 export default {
   components: {
     WelcomeBanner,
+    GridLinks,
   },
 }
 </script>
@@ -33,6 +36,7 @@ body {
 }
 
 .title {
+  margin-top: 1rem;
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
