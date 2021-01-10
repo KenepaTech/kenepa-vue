@@ -34,9 +34,39 @@
           </div>
         </nuxt-link>
       </b-col>
-      <b-col sm>col-sm</b-col>
-      <b-col sm>col-sm</b-col>
-      <b-col sm>col-sm</b-col>
+      <b-col class="img-wrapper" sm="6"
+        ><picture>
+          <source
+            :srcSet="require('~/assets/contact-mask.jpg?webp')"
+            type="image/webp"
+          />
+          <source
+            :srcSet="require('~/assets/contact-mask.jpg')"
+            type="image/jpeg"
+          />
+          <img class="grid-image" :src="require('~/assets/contact-mask.jpg')" />
+        </picture>
+        <nuxt-link to="/contact">
+          <div class="overlay">
+            <div class="grid-text">CONTACT</div>
+          </div>
+        </nuxt-link>
+      </b-col>
+      <b-col class="img-wrapper" sm="6"
+        ><picture>
+          <source
+            :srcSet="require('~/assets/blog.jpg?webp')"
+            type="image/webp"
+          />
+          <source :srcSet="require('~/assets/blog.jpg')" type="image/jpeg" />
+          <img class="grid-image" :src="require('~/assets/blog.jpg')" />
+        </picture>
+        <nuxt-link to="/blog">
+          <div class="overlay">
+            <div class="grid-text">BLOG</div>
+          </div>
+        </nuxt-link>
+      </b-col>
     </b-row>
   </b-container>
 </template>
