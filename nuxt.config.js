@@ -8,7 +8,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Kenepa Tech is a team of young professionals with a multi-disciplinary background, with a focus on Computer Science and IT. We provide a plethora of technology services, mainly delivering PWAs and optimizing your websites with WASM using Rust. Kenepa Tech was founded by Julius Cathalina, a Computer Science Master student specializing in Bio-informatics. The lead platform engineer, Rocheandley Kwidama, is an IT & Security student at Hanze Hogeschool in Groningen. Iona Bootsma is our Administrator and PR manager. Finally, Liza Everon is our Security Researcher & Frontend lead.',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -36,6 +41,17 @@ export default {
     '@nuxtjs/stylelint-module',
     // nuxt optimized images
     '@aceforth/nuxt-optimized-images',
+    // nuxt fontawesome
+    [
+      '@nuxtjs/fontawesome',
+      {
+        component: 'fa',
+        suffix: true,
+        icons: {
+          solid: ['faHome', 'faHeart'],
+        },
+      },
+    ],
   ],
 
   optimizedImages: {
