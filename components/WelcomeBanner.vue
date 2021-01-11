@@ -16,6 +16,10 @@
   animation: typing 3s steps(50, end), blink-caret 1s step-end infinite;
   margin-bottom: 10%;
   display: inline-block;
+  width: inherit;
+}
+.typewriter {
+  display: inline-block;
 }
 
 @media (max-width: 576px) {
