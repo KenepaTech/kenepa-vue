@@ -37,14 +37,14 @@
       <b-col class="img-wrapper" sm="6"
         ><picture>
           <source
-            :srcSet="require('~/assets/contact-mask.jpg?webp')"
+            :srcSet="require('~/assets/item4.png?webp')"
             type="image/webp"
           />
           <source
-            :srcSet="require('~/assets/contact-mask.jpg')"
+            :srcSet="require('~/assets/item4.png')"
             type="image/jpeg"
           />
-          <img class="grid-image" :src="require('~/assets/contact-mask.jpg')" />
+          <img class="grid-image" :src="require('~/assets/item4.png')" />
         </picture>
         <nuxt-link to="/contact">
           <div class="overlay">
@@ -77,7 +77,6 @@
   width: 100%;
   height: 100%;
 }
-
 .overlay {
   position: absolute;
   bottom: 0;
@@ -87,13 +86,12 @@
   overflow: hidden;
   width: 0;
   height: 100%;
-  transition: 0.5s ease;
+  transition: 5s ease-in-out;
+  
 }
-
 .img-wrapper:hover .overlay {
   width: 100%;
 }
-
 .grid-text {
   color: white;
   font-size: 5rem;
@@ -105,10 +103,13 @@
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
-
 @media (max-width: 576px) {
   .grid-text {
     font-size: 3rem;
+  }
+  .overlay {
+    width: 100%;
+    opacity: 0.9;
   }
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
-  <img src="~/assets/kenepa_logo.png" class="KenepaLogo" />
+  <img id="KenepaLogo" src="~/assets/kenepa_logo.png" />
 </template>
 
 <style>
-.KenepaLogo {
+#KenepaLogo {
   height: 20%;
   width: 20%;
   animation: 5s appear;
