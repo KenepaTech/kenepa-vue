@@ -36,6 +36,41 @@
           </div>
         </nuxt-link>
       </b-col>
+      <b-col class="img-wrapper" sm="6"
+        ><picture class="grid-image">
+          <source
+            :srcSet="require('~/assets/item4.png?webp')"
+            type="image/webp"
+          />
+          <source
+            :srcSet="require('~/assets/item4.png')"
+            type="image/jpeg"
+          />
+          <img :src="require('~/assets/item4.png')" />
+        </picture>
+        <nuxt-link class="grid-text" to="/contact">
+          <div class="grid-text-wrap">
+            <p class="grid-text-category">contact</p>
+            <h2 class="grid-text-title">contact us plz!</h2>
+          </div>
+        </nuxt-link>
+      </b-col>
+      <b-col class="img-wrapper" sm="6"
+        ><picture class="grid-image">
+          <source
+            :srcSet="require('~/assets/blog.jpg?webp')"
+            type="image/webp"
+          />
+          <source :srcSet="require('~/assets/blog.jpg')" type="image/jpeg" />
+          <img :src="require('~/assets/blog.jpg')" />
+        </picture>
+        <nuxt-link class="grid-text" to="/blog">
+          <div class="grid-text-wrap">
+            <p class="grid-text-category">blog</p>
+            <h2 class="grid-text-title">spilling tea</h2>
+          </div>
+        </nuxt-link>
+      </b-col>
     </b-row>
   </b-container>
 </template>
@@ -47,14 +82,14 @@
   box-shadow: 10px 10px 10px 10px rgba(144, 238,144, 0.3);}
 .img-wrapper{
   position: relative;
+  background-color: lightgreen;
   overflow: hidden;
-  background-color: cornflowerblue;
 }
 .img-wrapper::after{
   content: "";
   position: absolute;
   display: inline-block;
-  background-color: chocolate;
+  background-color: inherit;
   opacity: 0.9;
   top: 0;
   left: 0;
@@ -74,7 +109,7 @@
 .grid-image::before{
   content: "";
   display: block;
-  padding-top: 75%;
+  padding-top: 65%;
   overflow: hidden;
 }
 .grid-image img{
