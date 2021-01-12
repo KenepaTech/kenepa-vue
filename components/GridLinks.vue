@@ -83,9 +83,13 @@
 }
 .img-wrapper{
   position: relative;
-  background-color: var(--kenepa-green);
+  background-color: var(--kenepa-green-alt);
   overflow: hidden;
 }
+.img-wrapper:nth-child(even) {
+  background-color: var(--kenepa-orange-alt);
+}
+
 .img-wrapper::after{
   content: "";
   position: absolute;
