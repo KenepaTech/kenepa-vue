@@ -1,12 +1,11 @@
 <template>
   <div class="container">
-    <div>
       <Logo />
       <h1 class="title">Kenepa Tech</h1>
       <WelcomeBanner />
       <GridLinks />
-    </div>
   </div>
+  <!-- removed the extra div that contained the logo to gridlinks -->
 </template>
 
 <script>

@@ -2,7 +2,7 @@
   <b-container class="bv-example-row">
     <b-row no-gutters>
       <b-col class="img-wrapper" sm="6">
-        <picture>
+        <picture class="grid-image" >
           <source
             :srcSet="require('~/assets/projects.jpg?webp')"
             type="image/webp"
@@ -11,59 +11,28 @@
             :srcSet="require('~/assets/projects.jpg')"
             type="image/jpeg"
           />
-          <img class="grid-image" :src="require('~/assets/projects.jpg')" />
+          <img :src="require('~/assets/projects.jpg')" />
         </picture>
-        <nuxt-link to="/projects">
-          <div class="overlay">
-            <div class="grid-text">PROJECTS</div>
+        <nuxt-link class="grid-text" to="/projects">
+          <div class="grid-text-wrap">
+            <p class="grid-text-category">design</p>
+            <h2 class="grid-text-title">projects</h2>
           </div>
         </nuxt-link>
       </b-col>
       <b-col class="img-wrapper" sm="6"
-        ><picture>
+        ><picture class="grid-image">
           <source
             :srcSet="require('~/assets/about.jpg?webp')"
             type="image/webp"
           />
           <source :srcSet="require('~/assets/about.jpg')" type="image/jpeg" />
-          <img class="grid-image" :src="require('~/assets/about.jpg')" />
+          <img :src="require('~/assets/about.jpg')" />
         </picture>
-        <nuxt-link to="/about">
-          <div class="overlay">
-            <div class="grid-text">ABOUT US</div>
-          </div>
-        </nuxt-link>
-      </b-col>
-      <b-col class="img-wrapper" sm="6"
-        ><picture>
-          <source
-            :srcSet="require('~/assets/item4.png?webp')"
-            type="image/webp"
-          />
-          <source
-            :srcSet="require('~/assets/item4.png')"
-            type="image/jpeg"
-          />
-          <img class="grid-image" :src="require('~/assets/item4.png')" />
-        </picture>
-        <nuxt-link to="/contact">
-          <div class="overlay">
-            <div class="grid-text">CONTACT</div>
-          </div>
-        </nuxt-link>
-      </b-col>
-      <b-col class="img-wrapper" sm="6"
-        ><picture>
-          <source
-            :srcSet="require('~/assets/blog.jpg?webp')"
-            type="image/webp"
-          />
-          <source :srcSet="require('~/assets/blog.jpg')" type="image/jpeg" />
-          <img class="grid-image" :src="require('~/assets/blog.jpg')" />
-        </picture>
-        <nuxt-link to="/blog">
-          <div class="overlay">
-            <div class="grid-text">BLOG</div>
+        <nuxt-link class="grid-text" to="/about">
+          <div class="grid-text-wrap">
+            <p class="grid-text-category">about us</p>
+            <h2 class="grid-text-title">story time</h2>
           </div>
         </nuxt-link>
       </b-col>
@@ -72,11 +41,90 @@
 </template>
 
 <style>
-.grid-image {
-  max-width: 100%;
+.bv-example-row{
+  position: relative;
+  display: inline-block;
+  box-shadow: 10px 10px 10px 10px rgba(144, 238,144, 0.3);}
+.img-wrapper{
+  position: relative;
+  overflow: hidden;
+  background-color: cornflowerblue;
+}
+.img-wrapper::after{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: chocolate;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+  transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1); 
 }
+.img-wrapper:hover::after{
+  transform: scale(2) translateX(0) translateY(0) rotate(-28deg); }
+.grid-image {
+  height: inherit;
+  transform: translateZ(0);
+  display: block;
+  transition: 750ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+.grid-image::before{
+  content: "";
+  display: block;
+  padding-top: 75%;
+  overflow: hidden;
+}
+.grid-image img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  line-height: 0; }
+
+.img-wrapper:hover .grid-image{
+  transform: scale(1.2);}
+
+.grid-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  transform: translateY(-20%);
+  transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+  transition-delay: 300ms;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.img-wrapper:hover .grid-text{
+  opacity: 1;
+  transform: translateY(0);}
+
+.grid-text-wrap{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  color: #fff;
+  text-transform: uppercase;
+  transform: translateY(-50%); }
+
+.grid-text-title {
+  font-size: 2rem;
+  padding: 0 1rem;
+  margin-top: 5px; }
+.grid-text-category {
+  font-size: 1.2rem;
+  opacity: 0.7;
+  margin: 0; }
+
 .overlay {
   position: absolute;
   bottom: 0;
@@ -86,23 +134,13 @@
   overflow: hidden;
   width: 0;
   height: 100%;
-  transition: 5s ease-in-out;
+  transition: 5s ease-in;
   
 }
 .img-wrapper:hover .overlay {
   width: 100%;
 }
-.grid-text {
-  color: white;
-  font-size: 5rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
+
 @media (max-width: 576px) {
   .grid-text {
     font-size: 3rem;

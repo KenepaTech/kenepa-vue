@@ -4,7 +4,7 @@
 
 <style>
 #footer {
-  background-color: #141e24;
+  background-color: var(--bg-color);
   color: #fff;
   font-size: 18px;
   width: 100%;
