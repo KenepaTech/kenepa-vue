@@ -1,6 +1,7 @@
 /* Utilities */
 :root {
   --bg-color: #141e24;
+  --kenepa-green:  rgb(37, 199, 110);
 }
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -119,7 +120,7 @@ img {
 .typewriter h1 {
   color: #fff;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid rgb(37, 199, 110); /* The typwriter cursor */
+  border-right: 0.15em solid var(--kenepa-green); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.1em; /* Adjust as needed */
@@ -146,7 +147,7 @@ img {
     border-color: transparent;
   }
   50% {
-    border-color: rgb(37, 199, 110);
+    border-color: var(--kenepa-green);
   }
 }
 /* ---------------------------------------------------------------------------- */
@@ -157,8 +158,8 @@ img {
 }
 
 .header #KenepaBrand {
-  color: lightgreen;
-  text-shadow: 0 0 20px lightgreen;
+  color: var(--kenepa-green);
+  text-shadow: 0 0 20px var(--kenepa-green);
 }
 .header ul {
   display: flex;

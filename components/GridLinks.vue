@@ -15,8 +15,8 @@
         </picture>
         <nuxt-link class="grid-text" to="/projects">
           <div class="grid-text-wrap">
-            <p class="grid-text-category">design</p>
-            <h2 class="grid-text-title">projects</h2>
+            <p class="grid-text-category">projects</p>
+            <h2 class="grid-text-title">our work</h2>
           </div>
         </nuxt-link>
       </b-col>
@@ -32,31 +32,32 @@
         <nuxt-link class="grid-text" to="/about">
           <div class="grid-text-wrap">
             <p class="grid-text-category">about us</p>
-            <h2 class="grid-text-title">story time</h2>
+            <h2 class="grid-text-title">meet the team</h2>
           </div>
         </nuxt-link>
       </b-col>
       <b-col class="img-wrapper" sm="6"
         ><picture class="grid-image">
           <source
-            :srcSet="require('~/assets/item4.png?webp')"
+            :srcSet="require('~/assets/contact.jpg?webp')"
             type="image/webp"
           />
           <source
-            :srcSet="require('~/assets/item4.png')"
+            :srcSet="require('~/assets/contact.jpg')"
             type="image/jpeg"
           />
-          <img :src="require('~/assets/item4.png')" />
+          <img :src="require('~/assets/contact.jpg')" />
         </picture>
         <nuxt-link class="grid-text" to="/contact">
           <div class="grid-text-wrap">
             <p class="grid-text-category">contact</p>
-            <h2 class="grid-text-title">contact us plz!</h2>
+            <h2 class="grid-text-title">get in touch!</h2>
           </div>
         </nuxt-link>
       </b-col>
       <b-col class="img-wrapper" sm="6"
-        ><picture class="grid-image">
+        >
+        <picture class="grid-image">
           <source
             :srcSet="require('~/assets/blog.jpg?webp')"
             type="image/webp"
@@ -79,10 +80,10 @@
 .bv-example-row{
   position: relative;
   display: inline-block;
-  box-shadow: 10px 10px 10px 10px rgba(144, 238,144, 0.3);}
+}
 .img-wrapper{
   position: relative;
-  background-color: lightgreen;
+  background-color: var(--kenepa-green);
   overflow: hidden;
 }
 .img-wrapper::after{
@@ -160,29 +161,27 @@
   opacity: 0.7;
   margin: 0; }
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #141e24;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: 5s ease-in;
-  
-}
-.img-wrapper:hover .overlay {
-  width: 100%;
-}
-
 @media (max-width: 576px) {
   .grid-text {
-    font-size: 3rem;
+    opacity: 1;
+  }
+  .grid-text-wrap {
+    transform: translateY(-40%) translateX(-30%) rotate(-60deg);
+  }
+  .grid-text-title {
+    font-size: 1rem;
   }
   .overlay {
     width: 100%;
     opacity: 0.9;
   }
+  .img-wrapper::after {
+    transform: scale(2) translateX(-35%) translateY(-25%) rotate(-60deg);
+  }
+  .img-wrapper:hover .grid-text-wrap{
+    transform: rotate(0deg);
+    transition: ease 500ms;
+  }
+
 }
 </style>
