@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <b-navbar toggleable type="dark">
-      <nuxt-link class="KenepaBrand" to="/">KENEPA TECH</nuxt-link>
+      <nuxt-link id="KenepaBrand" to="/">KENEPA TECH</nuxt-link>
       <b-navbar-toggle target="navbar-toggle-collapse">
         <template #default="{ expanded }">
           <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
@@ -34,24 +34,3 @@ export default {
   name: 'AppHeader',
 }
 </script>
-
-<style>
-.header {
-  margin-bottom: 10%;
-}
-
-.header .KenepaBrand {
-  color: lightgreen;
-  text-shadow: 0 0 20px lightgreen;
-}
-.header ul {
-  display: flex;
-}
-.header a {
-  display: inline-block;
-  color: #fff;
-  padding: 0.3rem 1rem;
-  margin-right: 0.5rem;
-  border-radius: 5%;
-}
-</style>

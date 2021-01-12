@@ -1,12 +1,10 @@
 <template>
-  <footer class="footer">
-    &copy; {{ new Date().getFullYear() }} Kenepa Tech
-  </footer>
+  <footer id="footer"> &copy; {{ new Date().getFullYear() }} Kenepa Tech</footer>
 </template>
 
 <style>
-.footer {
-  background-color: #141e24;
+#footer {
+  background-color: var(--bg-color);
   color: #fff;
   font-size: 18px;
   width: 100%;
