@@ -2,23 +2,23 @@
 <div class="sidebar">
   <ul>
   <li>
-    <a href="#">
+    <a href="https://twitter.com/KenepaTech" target="_blank">
       <i><fa-icon :icon="['fab','twitter']" /></i>
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="https://www.instagram.com/kenepatech/" target="_blank">
      <i><fa-icon :icon="['fab','instagram']" /></i>
     </a>
     </li>
   <li>
-    <a href="#">
+    <a href="https://www.linkedin.com/in/julius-cathalina/" target="_blank">
       <i> <fa-icon :icon="['fab','linkedin-in']" /></i>
     </a>
     
   </li>
   <li>
-    <a href="#">
+    <a href="https://github.com/KenepaTech" target="_blank">
       <i><fa-icon :icon="['fab','github-alt']" /></i>
     </a> 
   </li>
@@ -46,7 +46,7 @@ ul {
 
 .sidebar{
   top: 30%;
-  left: 10px;
+  left: 10%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -70,10 +70,10 @@ ul li a {
   height: 60px;
   text-align: center;
   line-height: 63px;
-  background-color:var(--kenepa-orange-alt);
+  background-color:var(--bg-color-light);
   border-radius: 50%;
   font-size: 30px;
-  color: var(--bg-color);
+  color: rgb(136, 136, 136);
   transition: .5s;
 }
 

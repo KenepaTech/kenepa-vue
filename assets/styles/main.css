@@ -1,11 +1,13 @@
 /* Utilities */
 :root {
   --bg-color: #141e24;
+  --bg-color-light:  #24313a;
   --kenepa-green-alt:  rgb(37, 199, 110);
   --kenepa-orange-alt: #f8642a;
   --kenepa-orange-alt3: #f17f4b;
   --kenepa-green: #278d2b;
   --kenepa-orange: #f08c16;
+
 
 }
 html {
