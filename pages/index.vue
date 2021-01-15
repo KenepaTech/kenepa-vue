@@ -8,14 +8,3 @@
   <!-- removed the extra div that contained the logo to gridlinks -->
 </template>
 
-<script>
-import WelcomeBanner from '../components/WelcomeBanner'
-import GridLinks from '../components/GridLinks'
-
-export default {
-  components: {
-    WelcomeBanner,
-    GridLinks,
-  },
-}
-</script>

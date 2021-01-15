@@ -20,6 +20,16 @@
           </div>
         </nuxt-link>
       </b-col>
+      <b-col class="text-wrapper" sm="6">
+        <h2>PROJECTS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ducimus accusamus provident libero nulla quidem?</p>
+      </b-col>
+      <b-col class="text-wrapper" sm="6">
+        <h2>ABOUT</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ducimus accusamus provident libero nulla quidem?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt hic voluptatibus ratione, officia id quaerat eius nostrum nihil optio consequatur, voluptatem maiores eligendi et vel assumenda? Nam cupiditate tempore incidunt.
+        </p>
+      </b-col>
       <b-col class="img-wrapper" sm="6"
         ><picture class="grid-image">
           <source
@@ -55,6 +65,16 @@
           </div>
         </nuxt-link>
       </b-col>
+       <b-col class="text-wrapper" sm="6">
+        <h2>CONTACT</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta porro cumque, fugiat a error, deserunt eaque consequuntur eveniet animi itaque ullam qui quia dolorum totam dolorem nemo quos. Fuga consequuntur consectetur sit, ut minus quibusdam expedita facilis nostrum veritatis ipsa voluptatum sed. Reprehenderit veritatis illo, voluptates facilis totam doloremque dolorum!</p>
+      </b-col>
+      <b-col class="text-wrapper" sm="6">
+        <h2>BLOG</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ducimus accusamus provident libero nulla quidem?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt hic voluptatibus ratione, officia id quaerat eius nostrum nihil optio consequatur, voluptatem maiores eligendi et vel assumenda? Nam cupiditate tempore incidunt.
+        </p>
+      </b-col>
       <b-col class="img-wrapper" sm="6"
         >
         <picture class="grid-image">
@@ -85,6 +105,7 @@
   position: relative;
   background-color: var(--kenepa-green-alt);
   overflow: hidden;
+  
 }
 .img-wrapper:nth-child(even) {
   background-color: var(--kenepa-orange-alt);
@@ -165,6 +186,7 @@
   opacity: 0.7;
   margin: 0; }
 
+
 @media (max-width: 576px) {
   .grid-text {
     opacity: 1;
@@ -179,12 +201,19 @@
     width: 100%;
     opacity: 0.9;
   }
+  .img-wrapper{
+    border-radius: 5%;
+    margin-bottom: 1rem;
+  }
   .img-wrapper::after {
     transform: scale(2) translateX(-35%) translateY(-25%) rotate(-60deg);
   }
   .img-wrapper:hover .grid-text-wrap{
     transform: rotate(0deg);
     transition: ease 500ms;
+  }
+  .text-wrapper{
+    display: none;
   }
 
 }
