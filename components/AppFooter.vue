@@ -1,5 +1,8 @@
 <template>
-  <footer id="footer"> &copy; {{ new Date().getFullYear() }} Kenepa Tech</footer>
+  <footer id="footer"> &copy; {{ new Date().getFullYear() }} Kenepa Tech
+    <SideBarMobile />
+  </footer>
+  
 </template>
 
 <style>
