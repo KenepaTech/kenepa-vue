@@ -2,23 +2,23 @@
 <div class="sidebar">
   <ul>
   <li>
-    <a href="#">
+    <a href="https://twitter.com/KenepaTech" target="_blank" title="Go to Kenepa Tech's Twitter page">
       <i><fa-icon :icon="['fab','twitter']" /></i>
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="https://www.instagram.com/kenepatech/" target="_blank" title="Go to Kenepa Tech's Instagram page">
      <i><fa-icon :icon="['fab','instagram']" /></i>
     </a>
     </li>
   <li>
-    <a href="#">
+    <a href="https://www.linkedin.com/in/julius-cathalina/" target="_blank" title="Go to Kenepa Tech's Linkedin page">
       <i> <fa-icon :icon="['fab','linkedin-in']" /></i>
     </a>
     
   </li>
   <li>
-    <a href="#">
+    <a href="https://github.com/KenepaTech" target="_blank" title="Go to Kenepa Tech's Github page">
       <i><fa-icon :icon="['fab','github-alt']" /></i>
     </a> 
   </li>

@@ -11,7 +11,7 @@
             :srcSet="require('~/assets/projects.jpg')"
             type="image/jpeg"
           />
-          <img :src="require('~/assets/projects.jpg')" />
+          <img :src="require('~/assets/projects.jpg')" alt="Projects" />
         </picture>
         <nuxt-link class="grid-text" to="/projects">
           <div class="grid-text-wrap">
@@ -37,7 +37,7 @@
             type="image/webp"
           />
           <source :srcSet="require('~/assets/about.jpg')" type="image/jpeg" />
-          <img :src="require('~/assets/about.jpg')" />
+          <img :src="require('~/assets/about.jpg')" alt="About us" />
         </picture>
         <nuxt-link class="grid-text" to="/about">
           <div class="grid-text-wrap">
@@ -56,7 +56,7 @@
             :srcSet="require('~/assets/contact.jpg')"
             type="image/jpeg"
           />
-          <img :src="require('~/assets/contact.jpg')" />
+          <img :src="require('~/assets/contact.jpg')" alt="Contact us" />
         </picture>
         <nuxt-link class="grid-text" to="/contact">
           <div class="grid-text-wrap">
@@ -83,7 +83,7 @@
             type="image/webp"
           />
           <source :srcSet="require('~/assets/blog.jpg')" type="image/jpeg" />
-          <img :src="require('~/assets/blog.jpg')" />
+          <img :src="require('~/assets/blog.jpg')" alt="Blog"/>
         </picture>
         <nuxt-link class="grid-text" to="/blog">
           <div class="grid-text-wrap">
