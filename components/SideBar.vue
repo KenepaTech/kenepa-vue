@@ -2,23 +2,23 @@
 <div class="sidebar">
   <ul>
   <li>
-    <a href="https://twitter.com/KenepaTech" target="_blank">
+    <a href="https://twitter.com/KenepaTech" target="_blank" title="Go to Kenepa Tech's Twitter page">
       <i><fa-icon :icon="['fab','twitter']" /></i>
     </a>
   </li>
   <li>
-    <a href="https://www.instagram.com/kenepatech/" target="_blank">
+    <a href="https://www.instagram.com/kenepatech/" target="_blank" title="Go to Kenepa Tech's Instagram page">
      <i><fa-icon :icon="['fab','instagram']" /></i>
     </a>
     </li>
   <li>
-    <a href="https://www.linkedin.com/in/julius-cathalina/" target="_blank">
+    <a href="https://www.linkedin.com/in/julius-cathalina/" target="_blank" title="Go to Kenepa Tech's Linkedin page">
       <i> <fa-icon :icon="['fab','linkedin-in']" /></i>
     </a>
     
   </li>
   <li>
-    <a href="https://github.com/KenepaTech" target="_blank">
+    <a href="https://github.com/KenepaTech" target="_blank" title="Go to Kenepa Tech's Github page">
       <i><fa-icon :icon="['fab','github-alt']" /></i>
     </a> 
   </li>
@@ -51,11 +51,12 @@ ul {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: flex;
-  z-index: 20000000000000;
+  z-index: 200;
 }
 
 ul {
   flex-direction: column;
+  left: 20px;
 }
 
 ul li {

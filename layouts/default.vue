@@ -8,14 +8,3 @@
   </div>
 </template>
 
-<script>
-import AppHeader from '../components/AppHeader'
-import SideBar from '../components/SideBar'
-export default {
-  components: {
-    AppHeader,
-    SideBar,
-
-  },
-}
-</script>
