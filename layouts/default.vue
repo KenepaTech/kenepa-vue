@@ -1,8 +1,7 @@
 <template>
-
   <div>
     <AppHeader />
-     <SideBar />
+    <SideBar />
     <Nuxt />
     <AppFooter />
   </div>
