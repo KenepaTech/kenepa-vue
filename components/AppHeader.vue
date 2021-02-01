@@ -28,9 +28,3 @@
     </b-navbar>
   </header>
 </template>
-
-<script>
-export default {
-  name: 'AppHeader',
-}
-</script>
