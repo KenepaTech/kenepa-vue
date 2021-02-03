@@ -27,8 +27,6 @@
       <b-col class="text-wrapper" sm="6">
         <h2 class="text-center">ABOUT</h2>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ducimus accusamus provident libero nulla quidem?</p>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt hic voluptatibus ratione, officia id quaerat eius nostrum nihil optio consequatur, voluptatem maiores eligendi et vel assumenda? Nam cupiditate tempore incidunt.
-        </p>
       </b-col>
       <b-col class="img-wrapper" sm="6"
         ><picture class="grid-image">
@@ -67,13 +65,11 @@
       </b-col>
        <b-col class="text-wrapper" sm="6">
         <h2 class="text-center">CONTACT</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta porro cumque, fugiat a error, deserunt eaque consequuntur eveniet animi itaque ullam qui quia dolorum totam dolorem nemo quos. Fuga consequuntur consectetur sit, ut minus quibusdam expedita facilis nostrum veritatis ipsa voluptatum sed. Reprehenderit veritatis illo, voluptates facilis totam doloremque dolorum!</p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta porro cumque, fugiat a error, deserunt eaque consequuntur eveniet animi</p>
       </b-col>
       <b-col class="text-wrapper" sm="6">
         <h2 class="text-center">BLOG</h2>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ducimus accusamus provident libero nulla quidem?</p>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt hic voluptatibus ratione, officia id quaerat eius nostrum nihil optio consequatur, voluptatem maiores eligendi et vel assumenda? Nam cupiditate tempore incidunt.
-        </p>
       </b-col>
       <b-col class="img-wrapper" sm="6"
         >
@@ -97,6 +93,10 @@
 </template>
 
 <style>
+.text-wrapper p{
+  position: absolute;
+}
+
 .text-center{
   display:flex;
   margin-top: 1rem;
