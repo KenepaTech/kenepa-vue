@@ -55,8 +55,8 @@ export default {
         },
         // TODO: FIX THE EMAIL VALIDATION
         emailState(){ 
-            const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-            const isMailValid = this.emailAdress.match(mailformat)
+            const mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            const isMailValid = this.emailAdress.match(mailFormat)
             return isMailValid
             
         },
