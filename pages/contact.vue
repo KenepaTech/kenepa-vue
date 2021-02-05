@@ -13,13 +13,13 @@
         <label class="form-label" for="message">Message: </label>
         <b-form-textarea id="message" class="form-field"  placeholder="Message..." rows="5" :state="false"></b-form-textarea> -->
         <b-form-group label="Name: " label-for="name" label-rows-sm="2" label-align-sm="left" valid-feedback="Thank you!" :invalid-feedback="invalidNameFeedback" :state="nameState">
-            <b-form-input id="name" v-model="nombre" class="form-field" name="name"  placeholder="Enter your name" :state="nameState" required trim></b-form-input>
+            <b-form-input id="name" v-model="nameField" class="form-field" name="name"  placeholder="Enter your name" :state="nameState" required trim></b-form-input>
         </b-form-group>
         <b-form-group label="Email: " label-for="email" label-rows-sm="2" label-align-sm="left" valid-feedback="Thank you twice" :invalid-feedback="invalidEmailFeedback" :state="emailState"> 
-            <b-form-input id="email" v-model="emailaddress" class="form-field" name="email" type="email" placeholder="Enter email" :state="emailState" required trim></b-form-input>
+            <b-form-input id="email" v-model="emailAdress" class="form-field" name="email" type="email" placeholder="Enter email" :state="emailState" required trim></b-form-input>
         </b-form-group>
         <b-form-group label="Message: " label-for="message" label-rows-sm="2" label-align-sm="left" valid-feedback="Thank you trice!" :invalid-feedback="invalidMessageFeedback" :state="messageState">
-            <b-form-textarea id="message" v-model="msgtext" class="form-field"  placeholder="Message..." rows="5" :state="messageState" required trim></b-form-textarea>
+            <b-form-textarea id="message" v-model="msgText" class="form-field"  placeholder="Message..." rows="5" :state="messageState" required trim></b-form-textarea>
         </b-form-group>
         <b-button type="submit" class="form-button"  variant="info">Send Message</b-button>
     </b-form>
@@ -32,23 +32,23 @@
 export default {
         data(){
         return{
-            nombre: '',
-            emailaddress: '',
-            msgtext: ''
+            nameField: '',
+            emailAdress: '',
+            msgText: ''
         }
     },
     computed: {
         nameState(){
-            if(this.nombre.length === 0){
+            if(this.nameField.length === 0){
                 return null
             }
             else{
-              const isNameValid = this.nombre.length >= 4;
+              const isNameValid = this.nameField.length >= 4;
               return  isNameValid
               } 
         },
         invalidNameFeedback(){
-            if(this.nombre.length > 0){
+            if(this.nameField.length > 0){
                 return 'Enter at least 4 characters.'
             }
             return 'Please enter something.'
@@ -56,28 +56,28 @@ export default {
         // TODO: FIX THE EMAIL VALIDATION
         emailState(){ 
             const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-            const isMailValid = this.emailaddress.match(mailformat)
+            const isMailValid = this.emailAdress.match(mailformat)
             return isMailValid
             
         },
         invalidEmailFeedback(){
 
-            if(this.emailaddress.length > 0){
+            if(this.emailAdress.length > 0){
                 return 'Please enter your email'
             }
             return 'Please enter a valid email'
         },
         messageState(){
-            if(this.msgtext.length === 0){
+            if(this.msgText.length === 0){
                 return null
             }
             else{
-              const isMsgValid = this.msgtext.length >= 20;
+              const isMsgValid = this.msgText.length >= 20;
               return  isMsgValid
             } 
         },
         invalidMessageFeedback(){
-            if(this.msgtext.length > 0){
+            if(this.msgText.length > 0){
                 return 'Enter at least 20 characters.'
             }
             return 'Please enter a message you want to send.'
