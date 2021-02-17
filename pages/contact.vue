@@ -55,10 +55,15 @@ export default {
         },
         // TODO: FIX THE EMAIL VALIDATION
         emailState(){ 
-            const mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-            const isMailValid = this.emailAdress.match(mailFormat)
-            return isMailValid
-            
+            if(this.emailAdress.length === 0){
+                return null
+            }
+            else{
+                const mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                // const isMailValid = this.emailAdress.match(mailFormat)
+                const isMailValid = mailFormat.test(this.emailAdress)
+                return isMailValid
+            }
         },
         invalidEmailFeedback(){
 
