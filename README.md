@@ -1,4 +1,4 @@
-# kenepa-nuxt
+# kenepa-vue
 
 main: ![main](https://github.com/KenepaTech/kenepa-nuxt/workflows/ci/badge.svg?branch=main)
 dev: ![dev](https://github.com/KenepaTech/kenepa-nuxt/workflows/ci/badge.svg?branch=dev)
@@ -7,17 +7,10 @@ dev: ![dev](https://github.com/KenepaTech/kenepa-nuxt/workflows/ci/badge.svg?bra
 
 ```bash
 # install dependencies
-$ yarn install
+$ yarn
 
 # serve with hot reload at localhost:3000
 $ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+For Vue 3 docs, visit [this link]("v3.vuejs.org/guide/introduction.html")
