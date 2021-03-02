@@ -1,5 +1,5 @@
 <template>
-  <img id="KenepaLogo" src="src/assets/kenepa_logo.png" alt="Kenepa Tech Logo"/>
+  <img id="KenepaLogo" src="/icon.png" alt="Kenepa Tech Logo"/>
 </template>
 
 <script>
