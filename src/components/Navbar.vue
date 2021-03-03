@@ -12,12 +12,7 @@
             aria-expanded="false"
           >
             <span class="sr-only">Open main menu</span>
-            <!-- Icon when menu is closed. -->
-            <!--
-            Heroicon name: outline/menu
 
-            Menu open: "hidden", Menu closed: "block"
-          -->
             <svg
               class="block h-6 w-6"
               xmlns="http://www.w3.org/2000/svg"
@@ -33,12 +28,7 @@
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
-            <!-- Icon when menu is open. -->
-            <!--
-            Heroicon name: outline/x
 
-            Menu open: "block", Menu closed: "hidden"
-          -->
             <svg
               class="hidden h-6 w-6"
               xmlns="http://www.w3.org/2000/svg"
@@ -62,13 +52,13 @@
           <div class="flex-shrink-0 flex items-center">
             <img
               class="block lg:hidden h-8 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-              alt="Workflow"
+              src="/icon.png"
+              alt="Kenepa"
             />
             <img
               class="hidden lg:block h-8 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-              alt="Workflow"
+              src="/icon-wft.png"
+              alt="Kenepa"
             />
           </div>
           <!-- This is where we handle the mobile drop down menu -->
