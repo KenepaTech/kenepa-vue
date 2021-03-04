@@ -83,7 +83,7 @@
               <a
                 href="#"
                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                > <router-link to="/contacts"> Contact</router-link></a
+                >Contact</a
               >
             </div>
           </div>
@@ -199,7 +199,6 @@
 
 <script>
 export default {
-  name: "Navbar",
   data: () => ({
     menuIsOpen: false,
     userMenuIsOpen: false,

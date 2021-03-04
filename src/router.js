@@ -1,4 +1,4 @@
-import Vue from "vue";
+// import Vue from "vue"; // THIS WAS CAUSING THE PROBLEM WHAT
 import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
@@ -7,17 +7,17 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: () => import("@/views/Home.vue"),
+    component: () => import("./views/Home.vue"),
   },
   {
     path: "/about",
     name: "About",
-    component: () => import("@/views/About.vue"),
+    component: () => import("./views/About.vue"),
   },
   {
     path: "/contacts",
     name: "Contacts",
-    component: () => import("@/views/Contacts.vue"),
+    component: () => import("./views/Contacts.vue"),
   },
 ];
 

@@ -7,7 +7,8 @@
 </template>
 
 <script>
-import Navbar from '@/layouts/Navbar'
+import Navbar from 'src/components/Navbar'
+
 export default {
   name: "AppLayoutHome",
   components: {
@@ -15,10 +16,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.header {
-  height: 5rem;
-  background-color: green;
-}
-</style>
