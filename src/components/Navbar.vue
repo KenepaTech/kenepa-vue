@@ -116,12 +116,6 @@ nav {
   color:red;
 }
 
-
-.change_photo img{
-  /*content:url("kenepa_logo_w.png")*/
-
-}
-
 </style>
 
 <script>
