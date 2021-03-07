@@ -6,6 +6,7 @@
 
 <script>
 export default {
-  name: "Contacts"
+  name: "Contacts",
+  components: {}
 }
 </script>

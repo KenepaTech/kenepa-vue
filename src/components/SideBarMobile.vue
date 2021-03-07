@@ -93,3 +93,10 @@ ul li a:hover {
   
 } 
 </style>
+
+<script>
+export default {
+  name: 'SideBarMobile',
+  components: {}
+}
+</script>

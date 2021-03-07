@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import AppLayoutNavbar from './AppLayoutNavbar.vue'
+import AppLayoutNavbar from '@/layouts/AppLayoutNavbar'
 export default {
-  name: "AppLayoutHome",
+  name: "AppLayoutContact",
   components: {
     AppLayoutNavbar
   }
@@ -26,6 +26,6 @@ export default {
   color: #2c3e50;
 }
 #nav a.router-link-exact-active {
-  color: #b99342;
+  color: #b9429f;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <!-- <div id="appvue"> -->
     <AppLayout>
-      <router-view />
+    <router-view />
     </AppLayout>
-  </div>
+  <!-- </div> -->
 </template>
