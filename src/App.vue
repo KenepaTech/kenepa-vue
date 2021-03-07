@@ -1,21 +1,7 @@
 <template>
-  <Navbar />
-  <!-- <Logo />
-  <WelcomeBanner /> -->
+  <!-- <div id="appvue"> -->
+    <AppLayout>
+    <router-view />
+    </AppLayout>
+  <!-- </div> -->
 </template>
-
-<script>
-import Logo from './components/Logo.vue'
-import WelcomeBanner from './components/WelcomeBanner.vue'
-import Navbar from './components/Navbar.vue'
-
-
-export default {
-  name: 'App',
-  components: {
-    Logo,
-    Navbar,
-    WelcomeBanner,
-  }
-}
-</script>

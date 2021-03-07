@@ -50,39 +50,52 @@
           class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
         >
           <div class="flex-shrink-0 flex items-center">
-            <router-link to="/"><img
+            <img
               class="block lg:hidden h-8 w-auto"
               src="/icon.png"
               alt="Kenepa"
-            /></router-link>
-            <router-link to="/" class="bg-gray-900 text-white">
+            />
             <img
               class="hidden lg:block h-8 w-auto"
               src="/icon-wft.png"
               alt="Kenepa"
-            /></router-link>
+            />
           </div>
           <!-- This is where we handle the mobile drop down menu -->
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <router-link to="/" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</router-link>
-              <router-link to="/projects" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</router-link>
-              <router-link to="/blog" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</router-link>
-              <router-link to="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</router-link>
-              <router-link to="/contacts" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</router-link>
+              <a
+                href="#"
+                class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                ><router-link to="/projects">Projects</router-link></a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                ><router-link to="/blog">Blog</router-link></a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                ><router-link to="/about">About</router-link></a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                ><router-link to="/contacts">Contact</router-link></a
+              >
             </div>
           </div>
         </div>
         <div
           class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
         >
-        <!-- Heroicon name: outline/bell -->
-          <!-- <button
+          <button
             class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
           >
             <span class="sr-only">View notifications</span>
-            
+            <!-- Heroicon name: outline/bell -->
             <svg
               class="h-6 w-6"
               xmlns="http://www.w3.org/2000/svg"
@@ -98,10 +111,10 @@
                 d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
               />
             </svg>
-          </button> -->
+          </button>
 
           <!-- Profile dropdown -->
-          <!-- <div class="ml-3 relative">
+          <div class="ml-3 relative">
             <div>
               <button
                 type="button"
@@ -150,7 +163,7 @@
                 </div>
               </transition>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -159,11 +172,26 @@
     <div :class="menuIsOpen ? 'block' : 'hidden'" class="sm:hidden" id="mobile-menu">
       <div class="px-2 pt-2 pb-3 space-y-1">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <router-link to="/" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</router-link>
-        <router-link to="/projects" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</router-link>
-        <router-link to="/blog" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Blog</router-link>
-        <router-link to="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</router-link>
-        <router-link to="/contacts" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</router-link>
+        <a
+          href="#"
+          class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+          ><router-link to="/projects">Projects</router-link></a
+        >
+        <a
+          href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          ><router-link to="/blog">Blog</router-link></a
+        >
+        <a
+          href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          ><router-link to="/about">About</router-link></a
+        >
+        <a
+          href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          ><router-link to="/contats">Contact</router-link></a
+        >
       </div>
     </div>
   </nav>
@@ -171,7 +199,7 @@
 
 <script>
 export default {
-  name: 'Navbar',
+  name: 'AppLayoutNavbar',
   data: () => ({
     menuIsOpen: false,
     userMenuIsOpen: false,
