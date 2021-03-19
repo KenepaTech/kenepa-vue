@@ -58,7 +58,7 @@ import { createRouter, createWebHistory } from "vue-router";
 // import Home from './views/Home.vue'
 // import Contacts from './views/Contacts.vue'
 
-const routerHistory = createWebHistory()
+const routerHistory = createWebHistory();
 const router = createRouter({
   history: routerHistory,
   routes: [
@@ -86,13 +86,12 @@ const router = createRouter({
       name: "About",
       path: "/about",
       component: () =>
-        import(/* webpackChunkName "Home" */ "./views/About.vue"),
+        import(/* webpackChunkName "About" */ "./views/About.vue"),
     },
     {
       name: "Blog",
       path: "/blog",
-      component: () =>
-        import(/* webpackChunkName "Blog" */ "./views/Blog.vue"),
+      component: () => import(/* webpackChunkName "Blog" */ "./views/Blog.vue"),
     },
   ],
 });

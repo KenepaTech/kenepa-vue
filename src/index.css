@@ -7,7 +7,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #a4e707;
+  /* color: #a4e707; */
+  color: white;
 }
 
 /* Utilities */
