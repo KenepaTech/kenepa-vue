@@ -1,7 +1,8 @@
 <template>
     <!-- <Navbar /> -->
     <AppHeader />
-    <SideBar />
+    <!-- <SideBar /> -->
+    <Logo />
     <slot />
     <!-- <WelcomeBanner /> -->
     <AppFooter />
