@@ -2,7 +2,6 @@
     <!-- <Navbar /> -->
     <AppHeader />
     <SideBar />
-    <Logo />
     <slot />
     <!-- <WelcomeBanner /> -->
     <AppFooter />
