@@ -1,12 +1,17 @@
 <template>
+  <Logo />
   <div class="typewriter">
     <h1>Spicy Caribbean Tech</h1>
   </div>
 </template>
 
 <script>
+  import Logo from './Logo.vue'
 export default {
     name: 'WelcomeBanner',
+    components:{
+      Logo
+    }
 }
 </script>
 
