@@ -333,10 +333,10 @@ emojis-list@^3.0.0:
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"
   integrity sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==
 
-esbuild@^0.8.52:
-  version "0.8.55"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.55.tgz#4bf949c44db4ffc2a206ac0c002e8e94eecff7d5"
-  integrity sha512-mM/s7hjYe5mQR+zAWOM5JVrCtYCke182E9l1Bbs6rG5EDP3b1gZF9sHZka53PD/iNt6OccymVZRWkTtBfcKW4w==
+esbuild@^0.9.3:
+  version "0.9.7"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.9.7.tgz#ea0d639cbe4b88ec25fbed4d6ff00c8d788ef70b"
+  integrity sha512-VtUf6aQ89VTmMLKrWHYG50uByMF4JQlVysb8dmg6cOgW8JnFCipmz7p+HNBl+RR3LLCuBxFGVauAe2wfnF9bLg==
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -826,12 +826,12 @@ util-deprecate@^1.0.2:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
-vite@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.0.5.tgz#ac46857a3fa8686d077921e61bd48a986931df1d"
-  integrity sha512-QTgEDbq1WsTtr6j+++ewjhBFEk6c8v0xz4fb/OWJQKNYU8ZZtphOshwOqAlnarSstPBtWCBR0tsugXx6ajfoUg==
+vite@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.1.4.tgz#66396823701e54cf3bfb9f73dbd386c9b4329c86"
+  integrity sha512-j/p0RZQvNY/auSPfazsDfo1PHtFp8ktwXPbzI6NqplzHcR3Cn/dfQWiMxL6zp8j9IWdcJP1Zfms7mxruBhStJw==
   dependencies:
-    esbuild "^0.8.52"
+    esbuild "^0.9.3"
     postcss "^8.2.1"
     resolve "^1.19.0"
     rollup "^2.38.5"
