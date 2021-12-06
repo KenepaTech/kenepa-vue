@@ -1,5 +1,5 @@
 <template>
-  <b-navbar>
+  <b-navbar type=is-black>
     <template #brand>
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <img
@@ -21,3 +21,7 @@ export default {
   name: "Navbar",
 };
 </script>
+
+<style scoped>
+
+</style>
