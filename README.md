@@ -1,16 +1,24 @@
 # kenepa-vue
 
-main: ![main](https://github.com/KenepaTech/kenepa-nuxt/workflows/ci/badge.svg?branch=main)
-dev: ![dev](https://github.com/KenepaTech/kenepa-nuxt/workflows/ci/badge.svg?branch=dev)
-
-## Build Setup
-
-```bash
-# install dependencies
-$ yarn
-
-# serve with hot reload at localhost:3000
-$ yarn dev
+## Project setup
+```
+npm install
 ```
 
-For Vue 3 docs, visit [this link]("v3.vuejs.org/guide/introduction.html")
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
