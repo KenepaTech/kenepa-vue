@@ -3,7 +3,7 @@
     <template #brand>
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <img
-          src="@/assets/logo.png"
+          src="@/assets/Kenepa_Logo_V3_WT.png"
           alt="Kenepa Logo"
         />
       </b-navbar-item>
@@ -23,5 +23,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

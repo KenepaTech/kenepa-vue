@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>Kenepa Tech &copy; {{ getCurrentYear }}</strong>
+        <strong>Copyright &copy; {{ getCurrentYear }} Kenepa Tech. All rights reserved.</strong>
       </p>
     </div>
   </footer>

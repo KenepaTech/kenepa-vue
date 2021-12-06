@@ -31,6 +31,15 @@ html, body {
   height: 100%;
 }
 
+.kenepa-header {
+  font-size: 36px;
+}
+
+.kenepa-highlight {
+  color: white;
+  font-size: 48px
+}
+
 #app {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;

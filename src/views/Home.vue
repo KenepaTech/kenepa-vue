@@ -1,17 +1,16 @@
 <template>
   <div class="home">
-    <img alt="Kenepa logo" src="@/assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Landing />
   </div>
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
+import Landing from "@/components/Landing.vue";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    Landing,
   },
 };
 </script>
