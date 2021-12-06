@@ -63,7 +63,7 @@ html, body {
 }
 
 :root {
-  --main-bg-color: #000025;
+  --main-bg-color: 	#060614;
   --kenepa-indigo: #281c65;
   --kenepa-violet: #622097;
   --kenepa-magenta: #a0178a;
