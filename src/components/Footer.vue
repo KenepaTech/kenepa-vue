@@ -25,6 +25,6 @@ export default {
 
 <style scoped>
 .footer {
-  background-color: #000000;
+  background-color: var(--main-bg-color);
 }
 </style>

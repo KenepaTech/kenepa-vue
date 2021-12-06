@@ -24,7 +24,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-  background-color: #000000;
+  background-color: var(--main-bg-color);
 }
 
 html, body {
@@ -33,10 +33,11 @@ html, body {
 
 .kenepa-header {
   font-size: 36px;
+  color: whitesmoke;
 }
 
 .kenepa-highlight {
-  color: white;
+  color: var(--kenepa-pumpkin);
   font-size: 48px
 }
 
@@ -59,5 +60,15 @@ html, body {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+:root {
+  --main-bg-color: #000025;
+  --kenepa-indigo: #281c65;
+  --kenepa-violet: #622097;
+  --kenepa-magenta: #a0178a;
+  --kenepa-amaranth: #eb2c5d;
+  --kenepa-pumpkin: #fc6840;
+  --kenepa-sunglow: #f8c93c;
 }
 </style>
