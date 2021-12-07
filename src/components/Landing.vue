@@ -8,7 +8,9 @@
               for small & growing businesses
           </h1>
       </div>
-      <div class="column">Second column</div>
+      <div class="column">
+        <img src="https://www.procti.com.br/wp-content/uploads/2018/12/dataAnalytics.png" alt="data-science-image" />
+      </div>
     </div>
   </div>
 </template>
