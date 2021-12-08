@@ -1,9 +1,9 @@
 <template>
   <v-footer dark padless>
     <v-card class="flex" flat tile>
-      <v-card-title class="teal">
+      <v-card-title class="kenepa-pumpkin">
         <strong class="subheading"
-          >Get connected with us on social networks!</strong
+          >Reach us on our socials!</strong
         >
 
         <v-spacer></v-spacer>
@@ -23,7 +23,7 @@
         </v-btn>
       </v-card-title>
 
-      <v-card-text class="py-2 white--text text-center">
+      <v-card-text class="py-2 white--text text-center main-bg-color">
         <strong
           >Copyright &copy; {{ new Date().getFullYear() }} Kenepa Tech. All
           rights reserved.</strong
@@ -48,3 +48,13 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  .main-bg-color {
+    background-color: var(--main-bg-color);
+  }
+
+  .kenepa-pumpkin {
+    background-color: var(--kenepa-pumpkin);
+  }
+</style>
