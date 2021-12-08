@@ -1,7 +1,7 @@
 # Kenepa Tech's main site, powered by Vue 2
 
 - main: ![main](https://github.com/KenepaTech/kenepa-nuxt/workflows/ci/badge.svg?branch=main)
-- dev: ![dev](https://github.com/KenepaTech/kenepa-nuxt/workflows/ci/badge.svg?branch=dev)
+- dev: ![dev](https://github.com/KenepaTech/kenepa-nuxt/workflows/build/badge.svg?branch=dev)
 
 # About Kenepa Tech
 
