@@ -41,8 +41,8 @@ export default {
     return {
       icons: [
         { name: "mdi-github", path: "https://github.com/KenepaTech" },
-        { name: "mdi-twitter", path: "" },
-        { name: "mdi-instagram", path: "" },
+        { name: "mdi-twitter", path: "https://twitter.com/KenepaTech" },
+        { name: "mdi-instagram", path: "https://www.instagram.com/KenepaTech/" },
       ],
     };
   },
