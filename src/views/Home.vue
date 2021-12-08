@@ -1,16 +1,15 @@
 <template>
-  <div class="home">
-    <Landing />
-  </div>
+  <hello-world />
 </template>
 
 <script>
-import Landing from "@/components/Landing.vue";
+  import HelloWorld from '../components/HelloWorld'
 
-export default {
-  name: "Home",
-  components: {
-    Landing,
-  },
-};
+  export default {
+    name: 'Home',
+
+    components: {
+      HelloWorld,
+    },
+  }
 </script>
