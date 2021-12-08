@@ -1,15 +1,23 @@
 <template>
-  <Navbar />
+  <v-app>
+    <Navbar />
+    <v-main>
+      <router-view />
+    </v-main>
+    <Footer />
+  </v-app>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     Navbar,
+    Footer,
   },
 
   data: () => ({
@@ -20,7 +28,7 @@ export default {
 
 <style>
 :root {
-  --main-bg-color: 	#060614;
+  --main-bg-color: #060614;
   --kenepa-indigo: #281c65;
   --kenepa-violet: #622097;
   --kenepa-magenta: #a0178a;

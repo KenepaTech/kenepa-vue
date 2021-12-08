@@ -1,5 +1,4 @@
 <template>
-  <v-app>
     <v-app-bar app color="var(--main-bg-color)" dark hide-on-scroll>
       <div class="d-flex align-center">
         <v-img
@@ -23,15 +22,10 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn v-for="item in menuItems" :key="item.title" :to="item.path">
+      <v-btn text v-for="item in menuItems" :key="item.title" :to="item.path">
         {{ item.title }}
       </v-btn>
     </v-app-bar>
-
-    <v-main>
-      <router-view />
-    </v-main>
-  </v-app>
 </template>
 
 <script>
