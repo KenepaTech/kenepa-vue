@@ -8,9 +8,17 @@
 
         <v-spacer></v-spacer>
 
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
+        <v-btn
+          v-for="icon in icons"
+          :key="icon.name"
+          :href="icon.path"
+          target="_blank"
+          class="mx-4"
+          dark
+          icon
+        >
           <v-icon size="24px">
-            {{ icon }}
+            {{ icon.name }}
           </v-icon>
         </v-btn>
       </v-card-title>
@@ -28,5 +36,15 @@
 <script>
 export default {
   name: "Footer",
+
+  data() {
+    return {
+      icons: [
+        { name: "mdi-github", path: "https://github.com/KenepaTech" },
+        { name: "mdi-twitter", path: "" },
+        { name: "mdi-instagram", path: "" },
+      ],
+    };
+  },
 };
 </script>

@@ -1,9 +1,22 @@
 <template>
-  <v-app>
-    <div>
-    <h1>PLACEHOLDER</h1>
-  </div>
-  </v-app>
+  <v-container class="grey lighten-5">
+    <v-row>
+      <v-col
+        v-for="n in 2"
+        :key="n"
+        cols="12"
+        sm="6"
+      >
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+          One of three columns
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
