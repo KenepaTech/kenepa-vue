@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <v-app-bar app color="var(--main-bg-color)" dark hide-on-scroll>
+    <v-app-bar app color="var(--main-bg-color)" dark>
       
       <div class="d-flex align-center">
         <router-link to="/">
