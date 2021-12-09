@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Navbar />
-    <v-main>
+    <v-main class="main-bg-color">
       <router-view />
     </v-main>
     <Footer />
@@ -35,5 +35,15 @@ export default {
   --kenepa-amaranth: #eb2c5d;
   --kenepa-pumpkin: #fc6840;
   --kenepa-sunglow: #f8c93c;
+}
+
+.main-bg-color {
+  background-color: var(--main-bg-color);
+}
+.kenepa-pumpkin {
+  background-color: var(--kenepa-pumpkin);
+}
+.kenepa-magenta {
+  background-color: var(--kenepa-magenta);
 }
 </style>

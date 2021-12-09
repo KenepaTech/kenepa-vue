@@ -1,7 +1,7 @@
 <template>
   <v-footer dark padless>
     <v-card class="flex" flat tile>
-      <v-card-title class="kenepa-pumpkin">
+      <v-card-title class="kenepa-magenta">
         <strong class="subheading"
           >Reach us on our socials!</strong
         >
@@ -48,13 +48,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-  .main-bg-color {
-    background-color: var(--main-bg-color);
-  }
-
-  .kenepa-pumpkin {
-    background-color: var(--kenepa-pumpkin);
-  }
-</style>
