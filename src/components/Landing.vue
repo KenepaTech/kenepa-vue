@@ -6,13 +6,15 @@
           <span style="font-size: 1.5rem"
             >Maximize the potential of your growing business with</span
           >
-          <br>
+          <br />
           <span class="highlight-header"
             >Tailor-made Analytics & IT Services</span
           >
-          <br>
+          <br />
           Kenepa Tech offers an ensemble of technological expertise as a service
           to help your business grow and compete in the toughest markets.
+          <br />
+          <v-btn class="orange" style="margin-top: 1rem">Contact us</v-btn>
         </p>
       </v-col>
       <v-col cols="12" sm="6">

@@ -1,6 +1,7 @@
 <template>
     <v-app-bar app color="var(--main-bg-color)" dark hide-on-scroll>
       <div class="d-flex align-center">
+        <router-link to="/">
         <v-img
           alt="Kenepa Tech Logo"
           contain
@@ -9,7 +10,9 @@
           width="40"
           height="40"
         />
+        </router-link>
 
+        <router-link to="/">
         <v-img
           alt="Kenepa Tech Name"
           class="shrink mt-1 hidden-sm-and-down"
@@ -18,6 +21,7 @@
           src="@/assets/Kenepa_Text.png"
           width="100"
         />
+        </router-link>
       </div>
 
       <v-spacer></v-spacer>

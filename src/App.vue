@@ -50,4 +50,7 @@ h1 {
 .kenepa-magenta {
   background-color: var(--kenepa-magenta);
 }
+.kenepa-indigo {
+  background-color: var(--kenepa-indigo);
+}
 </style>

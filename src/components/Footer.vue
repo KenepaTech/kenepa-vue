@@ -1,7 +1,7 @@
 <template>
   <v-footer dark padless>
     <v-card class="flex" flat tile>
-      <v-card-title class="kenepa-magenta">
+      <v-card-title class="kenepa-indigo">
         <strong class="subheading"
           >Reach us on our socials!</strong
         >
