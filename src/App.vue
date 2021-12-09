@@ -37,6 +37,10 @@ export default {
   --kenepa-sunglow: #f8c93c;
 }
 
+h1 {
+  color: white;
+}
+
 .main-bg-color {
   background-color: var(--main-bg-color);
 }
