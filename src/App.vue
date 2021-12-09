@@ -41,6 +41,10 @@ h1 {
   color: white;
 }
 
+.spaced-section {
+  padding-top: 3rem;
+}
+
 .main-bg-color {
   background-color: var(--main-bg-color);
 }
