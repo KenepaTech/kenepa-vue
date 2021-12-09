@@ -1,7 +1,7 @@
 <template>
   <v-container class="main-bg-color spaced-section">
     <v-row>
-      <v-col cols="12" sm="6" class="d-flex flex-column">
+      <v-col cols="12" sm="6" class="d-flex flex-column justify-center">
         <h1 class="text-center text-lg-h3 bottom-space">
           Maximize the potential of your growing business with
         </h1>
@@ -21,10 +21,10 @@
           <v-row class="text-center">
             <v-col cols="12">
               <v-img
-                :src="require('@/assets/Kenepa_Logo_Dim.svg')"
+                src="https://www.datapine.com/images/google-analytics-performance-dashboard.png"
                 class="my-3"
                 contain
-                height="200"
+                :lazy-src="require('@/assets/Kenepa_Logo_Dim.svg')"
               />
             </v-col>
           </v-row>
@@ -58,7 +58,4 @@ p.dark {
   padding-bottom: 1rem;
 }
 
-.spaced-section {
-  padding-top: 3rem;
-}
 </style>
