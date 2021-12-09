@@ -1,11 +1,7 @@
 <template>
   <nav>
     <v-app-bar app color="var(--main-bg-color)" dark hide-on-scroll>
-      <v-app-bar-nav-icon
-        class="d-flex d-sm-none"
-        @click="drawer = !drawer"
-      ></v-app-bar-nav-icon>
-
+      
       <div class="d-flex align-center">
         <router-link to="/">
           <v-img
@@ -32,6 +28,12 @@
 
       <v-spacer></v-spacer>
 
+      <v-app-bar-nav-icon
+        class="d-flex d-sm-none"
+        @click="drawer = !drawer"
+      ></v-app-bar-nav-icon>
+
+
       <v-btn
         class="d-none d-sm-flex"
         text
@@ -48,6 +50,7 @@
       app
       class="black"
       dark
+      right
       mobile-breakpoint="99999"
     >
       <!-- FIXME: If you go to mobile size and back to desktop, sidebar will persist, temp fix is setting breakpoint to virtual infinity, e.g. 99999-->

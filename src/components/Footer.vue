@@ -1,13 +1,7 @@
 <template>
   <v-footer app dark padless>
     <v-card class="flex" flat tile>
-      <v-card-title class="kenepa-indigo">
-        <strong class="subheading"
-          >Reach us on our socials!</strong
-        >
-
-        <v-spacer></v-spacer>
-
+      <v-card-title class="kenepa-indigo footer-socials">
         <v-btn
           v-for="icon in icons"
           :key="icon.name"
@@ -48,3 +42,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.footer-socials {
+  justify-content: center;
+}
+</style>
