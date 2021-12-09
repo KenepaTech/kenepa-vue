@@ -14,7 +14,7 @@
           Kenepa Tech offers an ensemble of technological expertise as a service
           to help your business grow and compete in the toughest markets.
           <br />
-          <v-btn class="orange" style="margin-top: 1rem">Contact us</v-btn>
+          <v-btn class="orange" style="margin-top: 1rem" :to="'/contact'">Contact us</v-btn>
         </p>
       </v-col>
       <v-col cols="12" sm="6">
