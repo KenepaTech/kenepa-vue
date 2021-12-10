@@ -1,18 +1,60 @@
 <template>
-  <Logo />
-  <WelcomeBanner />
+  <v-app>
+    <Navbar />
+    <v-main class="main-bg-color">
+      <router-view />
+    </v-main>
+    <Footer />
+  </v-app>
 </template>
 
 <script>
-import Logo from './components/Logo.vue'
-import WelcomeBanner from './components/WelcomeBanner.vue'
-
+import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
+
   components: {
-    Logo,
-    WelcomeBanner,
-  }
-}
+    Navbar,
+    Footer,
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
+
+<style>
+:root {
+  --main-bg-color: #060614;
+  --kenepa-indigo: #281c65;
+  --kenepa-violet: #622097;
+  --kenepa-magenta: #a0178a;
+  --kenepa-amaranth: #eb2c5d;
+  --kenepa-pumpkin: #fc6840;
+  --kenepa-sunglow: #f8c93c;
+}
+
+h1 {
+  color: white;
+}
+
+.spaced-section {
+  padding-top: 3rem;
+}
+
+.main-bg-color {
+  background-color: var(--main-bg-color);
+}
+.kenepa-pumpkin {
+  background-color: var(--kenepa-pumpkin);
+}
+.kenepa-magenta {
+  background-color: var(--kenepa-magenta);
+}
+.kenepa-indigo {
+  background-color: var(--kenepa-indigo);
+}
+</style>
