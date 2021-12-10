@@ -1,7 +1,7 @@
 <template>
   <v-footer app dark padless>
     <v-card class="flex" flat tile>
-      <v-card-title class="kenepa-indigo footer-socials">
+      <v-card-title class="kenepa-indigo footer-socials pa-0 pa-lg-2">
         <v-btn
           v-for="icon in icons"
           :key="icon.name"
@@ -19,8 +19,7 @@
 
       <v-card-text class="py-2 white--text text-center main-bg-color">
         <strong
-          >Copyright &copy; {{ new Date().getFullYear() }} Kenepa Tech. All
-          rights reserved.</strong
+          >Copyright &copy; {{ new Date().getFullYear() }} Kenepa Tech</strong
         >
       </v-card-text>
     </v-card>
